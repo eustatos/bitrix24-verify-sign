@@ -6,11 +6,12 @@ node_js:
   - "7"
   - "6"
 install:
-  - npm install -g codecov instanbul
+  - npm install -g codecov
+scripts:
+  - npm test
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
-scripts:
-  npm test
+
 deploy:
   provider: npm
   email: process.env.NPM_EMAIL
