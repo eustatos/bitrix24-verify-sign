@@ -7,3 +7,7 @@ node_js:
   - "6"
 scripts:
   npm test
+deploy:
+  provider: npm
+  email: process.env.NPM_EMAIL
+  api_key: process.env.NPM_TOKEN
