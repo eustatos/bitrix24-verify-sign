@@ -5,6 +5,10 @@ node_js:
   - "8"
   - "7"
   - "6"
+install:
+  - npm install -g codecov
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
 scripts:
   npm test
 deploy:
