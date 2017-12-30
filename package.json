@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "description": "Simple function for check singnature from Bitrix24 API response.",
   "keywords": [
     "bitrix24"
   ],
