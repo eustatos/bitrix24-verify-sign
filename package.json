@@ -1,9 +1,13 @@
 {
   "name": "bitrix24-verify-sing",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Simple function for check singnature from Bitrix24 API response.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eustatos/bitrix24-verify-sign.git"
+  },
   "bugs": {
     "url": "https://github.com/eustatos/bitrix24-verify-sign/issues"
   },
