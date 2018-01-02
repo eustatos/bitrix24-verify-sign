@@ -18,14 +18,39 @@
     "@types/mocha": "^2.2.45",
     "@types/node": "^8.5.2",
     "chai": "^4.1.2",
+    "codecov": "^3.0.0",
     "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
     "ts-node": "^4.1.0",
+    "tsd": "^0.6.5",
     "typescript": "^2.6.2"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
+    "postinstall": "tsd install",
     "build": "tsc",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    "posttest": "nyc report --reporter=json && codecov -f coverage/*.json -t bcced72a-1bff-4e9f-9b2c-aabfbd36f63d",
+    "test": "nyc mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "all": true,
+    "extension": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "src/**/!(*.spec.*).[tj]s?(x)"
+    ],
+    "reporter": [
+      "html",
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "report-dir": "./coverage"
   },
   "dependencies": {
     "crypto": "^1.0.1"
