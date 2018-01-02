@@ -32,7 +32,7 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "postinstall": "tsd install",
-    "build": "./node_modules/typescript/bin/tsc",
+    "build": "tsc",
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json -t bcced72a-1bff-4e9f-9b2c-aabfbd36f63d",
     "test": "nyc mocha -r ts-node/register src/**/*.spec.ts",
     "release": "standard-version"
