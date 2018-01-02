@@ -1,6 +1,6 @@
 {
   "name": "bitrix24-verify-sing",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Simple function for check singnature from Bitrix24 API response.",
@@ -24,6 +24,7 @@
     "codecov": "^3.0.0",
     "mocha": "^4.1.0",
     "nyc": "^11.4.1",
+    "standard-version": "^4.2.0",
     "ts-node": "^4.1.0",
     "tsd": "^0.6.5",
     "typescript": "^2.6.2"
@@ -33,7 +34,8 @@
     "postinstall": "tsd install",
     "build": "tsc",
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json -t bcced72a-1bff-4e9f-9b2c-aabfbd36f63d",
-    "test": "nyc mocha -r ts-node/register src/**/*.spec.ts"
+    "test": "nyc mocha -r ts-node/register src/**/*.spec.ts",
+    "release": "standard-version"
   },
   "nyc": {
     "check-coverage": true,
