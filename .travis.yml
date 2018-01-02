@@ -1,14 +1,17 @@
 language: node_js
 node_js:
-  - "node"
-  - "9"
-  - "8"
-  - "7"
-  - "6"
+- node
+- '9'
+- '8'
+- '7'
+- '6'
 scripts:
-  - npm test
-
+- npm test
 deploy:
   provider: npm
-  email: process.env.NPM_EMAIL
-  api_key: process.env.NPM_TOKEN
+  email: astashkinav@gmail.com
+  api_key:
+    secure: r0E9vb8x2PLy5Di3jdCVPAy44RopiAJpUtslNbn25mw/O+cxV/SWNqVmSZm9/MyhmcVtfY9OXg8wVHrwfoWWRHWnF7UTpzP9T03CWEndaSMJqvoZ4H/Wfb3ZmxtX5W8w1+3hCcYEtCPi/QF02auuPdgXDSNJVHH9sO4XAhFUW0XACJ+qh3m3DK5QZzfW9+L85Adi6MedDmtyTF4qEl1j+dKeBMZTVpnE9f9gwSekqENWjQvPvLlAZ8Sx2OOgDJODtstvH40IwQCGHdDJqIJpihwrgp0KPF1R4qHRczelxjmUoB5j7JNksdCF3LsHPAeVi4xmcQoRJOUiy2Cib6vJZIv2D9dwrj664yhcG0gJrcA5EpYYf7186PxAO7hdRJdTCMem0ANPXR2y4n3cuek230regKjEm1CulXHBdhrxUwebaYU6fpaaBrYo4PkU6YHk27/frHTF4KnXTRcb51lbnEUVnWE7m4u+tfOCOnPAeUOg3PGoXjATSWkvSIsWIUdu7XEuNnalNazsRd0CdVmUGBBwr/c/KNSbrsFwZg1AcYtBlPzEFGdnVTALdPPcwy+DfF2WVM1FIiehEb6Pe3n1CKEr8DDrX6RjN5KbYvLhK9ZWMd3QEcbzb5MTq9hvWq+LYOA8KhwUVE5EOYfFCBM1OHh3OjNvCJMPB4MlKV72x9k=
+  on:
+    tags: true
+    repo: eustatos/bitrix24-verify-sign
