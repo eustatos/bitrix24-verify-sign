@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.13"></a>
+## [0.1.13](https://github.com/eustatos/bitrix24-verify-sign/compare/v0.1.12...v0.1.13) (2018-01-02)
+
+
+### Bug Fixes
+
+* **travis:** remove node version ([33613da](https://github.com/eustatos/bitrix24-verify-sign/commit/33613da))
+
+
+
 <a name="0.1.12"></a>
 ## [0.1.12](https://github.com/eustatos/bitrix24-verify-sign/compare/v0.1.11...v0.1.12) (2018-01-02)
 
