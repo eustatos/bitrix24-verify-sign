@@ -18,7 +18,7 @@ yarn add bitrix24-verify-sign
 
 ## Usage
 ```javascript
-import {bitrix24VerifySign} from '../src/index';
+import {bitrix24VerifySign} from 'bitrix24-verify-sign';
 
 const data = {
     member_id: <member_id>,
