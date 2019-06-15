@@ -1,8 +1,8 @@
 {
   "name": "bitrix24-verify-sing",
   "version": "0.1.15",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "description": "Simple function for check singnature from Bitrix24 API response.",
   "repository": {
     "type": "git",
@@ -34,7 +34,8 @@
     "typescript": "^2.6.2"
   },
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run test",
+    "prepare": "npm run build",
     "postinstall": "tsd install",
     "build": "tsc",
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json -t bcced72a-1bff-4e9f-9b2c-aabfbd36f63d",
@@ -66,5 +67,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": ["lib/**/*"]
 }
