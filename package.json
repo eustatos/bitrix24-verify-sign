@@ -1,5 +1,5 @@
 {
-  "name": "bitrix24-verify-sing",
+  "name": "bitrix24-verify-sign",
   "version": "0.1.19",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
