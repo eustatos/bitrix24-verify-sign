@@ -1,6 +1,6 @@
 {
   "name": "bitrix24-verify-sign",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "description": "Simple function for check singnature from Bitrix24 API response.",
