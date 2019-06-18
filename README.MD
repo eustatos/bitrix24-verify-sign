@@ -9,16 +9,16 @@
 ## Install
 
 ```bash
-npm i -S bitrix24-verify-sign
+npm i -S bitrix24-verify-signature
 ```
 If you use `yarn`
 ```bash 
-yarn add bitrix24-verify-sign
+yarn add bitrix24-verify-signature
 ```
 
 ## Usage
 ```javascript
-import {bitrix24VerifySign} from 'bitrix24-verify-sign';
+import {bitrix24VerifySign} from 'bitrix24-verify-signature';
 
 const data = {
     member_id: <member_id>,

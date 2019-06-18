@@ -1,6 +1,4 @@
 import {
-    createCipher,
-    createDecipher,
     createHash,
     createHmac
 } from 'crypto';
