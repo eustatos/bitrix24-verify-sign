@@ -6,7 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "lib"),
     filename: "index.js",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    globalObject: `typeof self !== 'undefined' ? self : this`
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
